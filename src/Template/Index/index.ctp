@@ -17,7 +17,7 @@
                 <ul>
                     <li><?= $this->Html->link('<i class="fa fa-cutlery"></i>' . __('Food Eater'), ['controller' => 'Stalls', 'action' => 'map'], ['escape' => false]) ?></li>
                     <li><?= $this->Html->link('<i class="fa fa-map-marker"></i>' . __('Stall Holder'), ['controller' => 'Reservations', 'action' => 'map'], ['escape' => false]) ?></li>
-                    <li><?= $this->Html->link('<i class="fa fa-male"></i>' . __('Organizer'), ['controller' => 'Reservations', 'action' => 'map'], ['escape' => false]) ?></li>
+                    <li><?= $this->Html->link('<i class="fa fa-male"></i>' . __('Organiser'), ['controller' => 'Reservations', 'action' => 'map'], ['escape' => false]) ?></li>
                 </ul>
             </div>
         </div>
