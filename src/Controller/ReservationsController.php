@@ -1,5 +1,6 @@
 <?php
 namespace App\Controller;
+use Cake\Utility\Hash;
 
 /**
  * Reservations Controller
@@ -86,6 +87,9 @@ class ReservationsController extends AppController
             //    $reservation->stall_id = $stall->id;
             //    unset($data['stall']);
             //}
+            if (Hash::get($data, 'reservation_date') == '2017-11-03') {
+                return $this->redirect(['action' => 'payment']);
+            }
             $reservation = $this->Reservations->patchEntity($reservation, $data);
             if ($this->Reservations->save($reservation)) {
                 $this->Flash->success(__('The reservation has been saved.'));
