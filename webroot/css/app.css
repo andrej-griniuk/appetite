@@ -1,0 +1,208 @@
+html {
+    width: 100%;
+    height: 100%;
+    background: url('../img/bg.png') repeat top center #000;
+}
+body {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.navbar-brand {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-decoration: none;
+}
+.navbar-brand span {
+    color: #0082cb;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 48px;
+    margin-left: 10px;
+}
+.navbar-brand img {
+    float: left;
+    height: 50px;
+}
+
+a {
+    color: #0082cb;
+    text-decoration: underline;
+}
+a:hover {
+    text-decoration: none;
+}
+
+.navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+
+.navbar {
+    background: #000;
+}
+.navbar a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.nav.nav-pills a {
+    background-color: #171717;
+}
+
+#map {
+    height: 500px;
+    margin-bottom: 30px;
+}
+
+@media (min-width: 768px) {
+    .map-container {
+        position: fixed;
+        top: 90px;
+        bottom: 30px;
+        left: 30px;
+        right: 30px;
+    }
+    .map-container .row, .map-container .row > div {
+        height: 100%;
+    }
+
+    #map {
+        height: 100%;
+        margin-bottom: 0;
+    }
+}
+
+
+.marker {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border: 5px solid #0082cb;
+    background: #0082cb;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    z-index: 888;
+}
+.marker > img {
+    border-radius: 50px;
+}
+.marker .flag {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    max-width: 30px;
+    max-height: 20px;
+    z-index: 999;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.marker:hover {
+    border-color: #036ba5;
+}
+
+.marker.available {
+    border: 5px dashed #0082cb;
+    background: #bbb;
+    text-align: center;
+}
+.marker.available:hover {
+    background: #ccc;
+}
+.marker.available a {
+    display: inline-block;
+    color: #0082cb;
+    font-weight: bold;
+    margin-top: 25px;
+    font-size: 14px;
+    padding: 10px 0;
+}
+
+.marker img {
+    max-width: 100% !important;
+}
+
+.btn-primary {
+    background-color: #0082cb;
+    border-color: #0477b8;
+}
+.btn-primary:hover {
+    background-color: #0477b8;
+    border-color: #036aa4;
+}
+.btn-primary:active, .btn-primary:focus, .btn-primary:active:focus {
+    background-color: #036aa4;
+    border-color: #005c8f;
+}
+
+.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus {
+    background-color: #0082cb;
+}
+#index {
+
+}
+#index h1 {
+    margin-bottom: 1em;
+}
+#index img {
+    width: 300px;
+}
+#index ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+#index ul li {
+    margin: 0 0 2em 0;
+    padding: 0;
+}
+#index a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 3px solid #fff;
+    font-size: 30px;
+    padding: 5px 0;
+    background: #062f4b;
+}
+#index a:hover {
+    border-color: #0082cb;
+    background: #083c5f;
+}
+#index a i {
+    margin-right: 15px;
+}
+
+.modal-content {
+    background: #fff;
+    color: #000;
+}
+.modal-content .close {
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    filter: alpha(opacity=20);
+}
+.modal-header, .modal-footer {
+    border-color: #e5e5e5;
+}
+
+#dateSelector {
+    position: absolute;
+    z-index: 1000;
+    top: 15px;
+    left: 50%;
+    margin-left: -125px;
+    width: 250px;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2em;
+    padding: 8px;
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background: url('../img/bg.png') repeat top center #000;
+    background: #333;
+}
