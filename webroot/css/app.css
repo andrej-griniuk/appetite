@@ -29,6 +29,11 @@ body {
 a {
     color: #0082cb;
     text-decoration: underline;
+    -o-transition:.2s;
+    -ms-transition:.2s;
+    -moz-transition:.2s;
+    -webkit-transition:.2s;
+    transition:.2s;
 }
 a:hover {
     text-decoration: none;
@@ -39,7 +44,7 @@ a:hover {
 }
 
 .navbar {
-    background: #000;
+    background: rgba(0, 0, 0, 0.6);
 }
 .navbar a {
     text-decoration: none;
@@ -73,6 +78,11 @@ img {
     #map {
         height: 100%;
         margin-bottom: 0;
+    }
+
+    .list-group {
+        height: 100%;
+        overflow-y: auto;
     }
 }
 
@@ -205,4 +215,39 @@ img {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     background: url('../img/bg.png') repeat top center #000;
     background: #333;
+}
+
+.list-group-item {
+    position: relative;
+    background: #fff;
+    border-color: #ddd;
+    color: #000;
+    font-size: 14px;
+    line-height: 20px;
+    padding-left: 78px;
+}
+.list-group-item > a {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+}
+.list-group-item > span {
+    color: #657786;
+    display: inline-block;
+    margin-left: 5px;
+}
+.list-group-item > img {
+    position: absolute;
+    top: 14px;
+    left: 15px;
+    width: 48px;
+    height: 48px;
+    border-radius: 24px;
+}
+
+.tweet-images {
+    padding-top: 5px;
+}
+.tweet-images .thumbnail {
+    margin-bottom: 0;
 }
